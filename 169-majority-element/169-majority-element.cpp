@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //moores algo
     int majorityElement(vector<int>& nums) {
         int n = nums.size();
         int count = 1;
