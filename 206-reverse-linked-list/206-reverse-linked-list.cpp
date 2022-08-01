@@ -19,11 +19,8 @@ public:
             pointer2 = pointer->next;
             pointer->next = prev;
             prev = pointer;
-            if (!pointer2){
-                break;
-            }
             pointer = pointer2;
         }
-        return pointer;
+        return prev;
     }
 };
