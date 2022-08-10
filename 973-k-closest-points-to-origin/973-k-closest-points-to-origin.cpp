@@ -6,9 +6,7 @@ public:
             int x = points[i][0];
             int y = points[i][1];
             int distance = x*x + y*y;
-            
-            points[i].emplace(points[i].begin(),distance);
-            storage.push(points[i]);
+            storage.push({distance, x, y});
             if (storage.size() > k){
                 storage.pop();
             }
@@ -17,8 +15,7 @@ public:
         while (!storage.empty()){
             vector<int> popped = storage.top();
             storage.pop();
-            popped.erase(popped.begin());
-            result.push_back(popped);
+            result.push_back({popped[1], popped[2]});
         }
         return result;
     }
