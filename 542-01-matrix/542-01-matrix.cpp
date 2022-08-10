@@ -3,36 +3,35 @@ public:
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
         int m = mat.size();
         int n = mat[0].size();
-        queue<vector<int>> storage;
+        int max = m + n;
         for (int i=0; i<m; i++){
             for (int j=0; j<n; j++){
-                if (mat[i][j]==0){
-                    vector<int> pair = {i,j};
-                    storage.push(pair);
-                } else {
-                    mat[i][j] = -1; 
+                int top = max, left = max;
+                if (mat[i][j]==0){continue;}
+                if (i-1 >= 0){
+                    top = mat[i-1][j];
                 }
+                if (j-1 >= 0){
+                    left = mat[i][j-1];
+                }
+                mat[i][j] = 1 + min(top,left);
             }
         }
         
-        vector<vector<int>> dirs = {{1,0},{-1,0},{0,1},{0,-1}};
-        while (!storage.empty()){
-            vector<int> queue_pair = storage.front();
-            int row = queue_pair[0];
-            int col = queue_pair[1];
-            storage.pop();
-            
-            for (int i=0; i<4; i++){
-                int new_row = row + dirs[i][0];
-                int new_col = col + dirs[i][1];
-                if (new_row < 0 || new_row >= m || new_col < 0 || new_col >= n || mat[new_row][new_col] != -1){continue;}
-                mat[new_row][new_col] = mat[row][col] + 1;
-                vector<int> new_pair = {new_row,new_col};
-                storage.push(new_pair);
+        for (int i=m-1; i>=0; i--){
+            for (int j=n-1; j>=0; j--){
+                int bot = max, right = max;
+                if (mat[i][j]==0){continue;}
+                if (i+1 < m){
+                    bot = mat[i+1][j];
+                }
+                if (j+1 < n){
+                    right = mat[i][j+1];
+                }
+                mat[i][j] = min(mat[i][j], 1 + min(bot,right));
             }
         }
         
         return mat;
-        
     }
 };
