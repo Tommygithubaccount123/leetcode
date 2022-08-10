@@ -6,10 +6,8 @@ public:
             int x = points[i][0];
             int y = points[i][1];
             int distance = (x*x + y*y);
-            vector<int> group = {distance};
-            for (auto j : points[i]){
-                group.push_back(j);
-            }
+            vector<int> group = points[i];
+            group.emplace(group.begin(),distance);
             storage.push(group);
             if (storage.size() > k){
                 storage.pop();
