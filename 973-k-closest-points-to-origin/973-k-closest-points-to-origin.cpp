@@ -17,7 +17,7 @@ public:
         while (!storage.empty()){
             vector<int> popped = storage.top();
             storage.pop();
-            popped = {popped[1],popped[2]};
+            popped.erase(popped.begin());
             result.push_back(popped);
         }
         return result;
