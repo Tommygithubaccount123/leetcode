@@ -1,38 +1,27 @@
 class Solution {
 public:
+    int evaluate(int a, int b, string op){
+        if (op == "+"){return a+b;}
+        if (op == "-"){return a-b;}
+        if (op == "*"){return a*b;}
+        return a/b;
+    }
+    
     int evalRPN(vector<string>& tokens) {
-        int n = tokens.size();
         stack<string> storage;
-        vector<string> operators = {"+","-","*","/"};
-        for (int i=0; i<n; i++){
-            bool ifOperator = false;
-            for (auto o : operators){
-                if (tokens[i] == o){
-                    ifOperator = true;
-                    break;
-                }
-            }
-            if (ifOperator==false){
-                storage.push(tokens[i]);
+        
+        for (auto token : tokens){
+            if (token.size()>1 || isdigit(token[0])){
+                storage.push(token);
             } else {
-                int first = stoi(storage.top());
-                storage.pop();
                 int second = stoi(storage.top());
                 storage.pop();
-                int evaluate = operatorHelp(second, first, tokens[i]);
-                storage.push(to_string(evaluate));
-            } 
+                int first = stoi(storage.top());
+                storage.pop();
+                storage.push(to_string(evaluate(first, second, token)));
+            }
         }
         
         return stoi(storage.top());
     }
-    
-    int operatorHelp(int a, int b, string c){
-        if (c == "+"){return a+b;}
-        if (c == "-"){return a-b;}
-        if (c == "*"){return a*b;}
-        if (c == "/"){return a/b;}
-        return -1;
-    }
-    
 };
