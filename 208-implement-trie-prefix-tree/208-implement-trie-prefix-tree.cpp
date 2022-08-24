@@ -13,16 +13,16 @@ public:
     Trie() {
         root = new TrieNode();
     }
-    // ~Trie(){
-    //     destruct(root);
-    // }
-    // void destruct(TrieNode* node){
-    //     if (node->children.size()==0){delete node;}
-    //     for (auto child : node->children){
-    //         destruct(child.second);
-    //     }
-    //     delete node;
-    // }
+    ~Trie(){
+        destruct(root);
+    }
+    void destruct(TrieNode* node){
+        if (node->children.size()==0){return;}
+        for (auto child : node->children){
+            destruct(child.second);
+        }
+        delete node;
+    }
     
     void insert(string word) {
         TrieNode* cur = root;
