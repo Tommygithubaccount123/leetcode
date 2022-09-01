@@ -17,7 +17,7 @@ public:
     void tracker(vector<vector<char>>& grid, int x, int y){
         if (x < 0 || x >= grid.size()){return;}
         if (y < 0 || y >= grid[0].size()){return;}
-        if (grid[x][y]=='0' || grid[x][y]=='2'){return;}
+        if (grid[x][y]!='1'){return;}
         
         grid[x][y] = '2';
         for (auto dir : dirs){
