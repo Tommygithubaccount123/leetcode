@@ -10,7 +10,7 @@ public:
             
             //left side
             if (nums[mid] >= nums[l]){
-                if (target >= nums[mid] || target < nums[l]){
+                if (target > nums[mid] || target < nums[l]){
                     l = mid + 1;
                 }
                 else {
@@ -18,7 +18,7 @@ public:
                 }
             //right side
             } else { 
-                if (target <= nums[mid] || target > nums[r]){
+                if (target < nums[mid] || target > nums[r]){
                     r = mid - 1;
                 }
                 else {
