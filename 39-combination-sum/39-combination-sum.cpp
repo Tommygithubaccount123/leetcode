@@ -18,8 +18,8 @@ public:
     }
     
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {  
-        vector<int> combo = {};
-        dfs(0, combo, 0, target, candidates);
+        // vector<int> combo = {};
+        dfs(0, {}, 0, target, candidates);
         return result;
         
     }
