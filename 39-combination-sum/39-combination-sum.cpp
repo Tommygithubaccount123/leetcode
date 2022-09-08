@@ -2,7 +2,7 @@ class Solution {
 private:
     vector<vector<int>> result;
 public:
-    void dfs(int i, vector<int> curCombo, int total, vector<int>& candidates, int target){
+    void dfs(int i, vector<int>& curCombo, int total, vector<int>& candidates, int target){
         if (total == target){
             result.push_back(curCombo);
             return;
@@ -17,8 +17,9 @@ public:
         dfs(i+1, curCombo, total, candidates, target);
     }
     
-    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {  
-        dfs(0, {}, 0, candidates, target);
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        vector<int> temp = {};
+        dfs(0, temp, 0, candidates, target);
         return result;
         
     }
