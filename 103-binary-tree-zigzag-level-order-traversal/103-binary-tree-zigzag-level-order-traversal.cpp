@@ -17,11 +17,10 @@ public:
         
         queue<TreeNode*> storage;
         storage.push(root);
-        int counter = 1;
+        bool zig = 0;
         while(!storage.empty()){
             vector<int> level;
             int len = storage.size();
-            bool odd = counter % 2;
             for (int i=0; i<len; i++){
                 TreeNode* top = storage.front();
                 storage.pop();
@@ -33,11 +32,11 @@ public:
                     storage.push(top->right);
                 }
             }
-            if (!odd){
+            if (zig){
                 reverse(level.begin(), level.end());
             }
             ans.push_back(level);
-            counter += 1;
+            zig = !zig;
         }
         return ans;
     }
