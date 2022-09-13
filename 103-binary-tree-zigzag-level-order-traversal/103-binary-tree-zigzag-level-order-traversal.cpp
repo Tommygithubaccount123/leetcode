@@ -19,21 +19,22 @@ public:
         storage.push(root);
         bool zig = 0;
         while(!storage.empty()){
-            vector<int> level;
             int len = storage.size();
+            vector<int> level(len);
             for (int i=0; i<len; i++){
                 TreeNode* top = storage.front();
                 storage.pop();
-                level.push_back(top->val);
+                if (zig){
+                    level[len-1-i] = top->val;
+                } else {
+                    level[i] = top->val;
+                }
                 if (top->left){
                     storage.push(top->left);
                 }
                 if (top->right){
                     storage.push(top->right);
                 }
-            }
-            if (zig){
-                reverse(level.begin(), level.end());
             }
             ans.push_back(level);
             zig = !zig;
