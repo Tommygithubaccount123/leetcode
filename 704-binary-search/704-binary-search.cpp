@@ -1,20 +1,21 @@
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-        return helper(nums, target, 0, nums.size()-1);
-    }
-    
-    int helper(vector<int>& nums, int target, int begin, int end){
+        int begin = 0;
+        int end = nums.size() - 1;
+        
         while (begin <= end){
-            int mid = (end + begin) / 2;
+            int mid = begin + (end - begin) / 2;
             if (nums[mid] == target){
                 return mid;
             }
             if (nums[mid] < target){
-                return helper(nums, target, mid+1, end);
+                begin = mid + 1;
+                continue;
             }
             if (nums[mid] > target){
-                return helper(nums, target, begin, mid-1);
+                end = mid - 1;
+                continue;
             }
         }
         return -1;
