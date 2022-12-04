@@ -4,9 +4,8 @@ public:
     int climbStairs(int n){
         if (n == 1){return 1;}
         if (n == 2){return 2;}
-        while (n > 2){
-            storage.push_back(storage[storage.size()-1]+storage[storage.size()-2]);
-            n--;
+        for (int i=2; i<n; i++){
+            storage.push_back(storage[i-2] + storage[i-1]);
         }
         return storage[storage.size()-1];
     }
