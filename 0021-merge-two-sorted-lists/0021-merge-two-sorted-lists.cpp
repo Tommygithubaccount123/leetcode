@@ -37,16 +37,12 @@ public:
             }
         }
         
-        while(list1){
+        if (list1){
             pointer->next = list1;
-            list1 = list1->next;
-            pointer = pointer->next;
         }
         
-        while (list2){
+        if (list2){
             pointer->next = list2;
-            list2 = list2->next;
-            pointer = pointer->next;
         }
         return head;
     }
