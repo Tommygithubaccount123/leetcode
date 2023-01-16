@@ -8,17 +8,16 @@ public:
             ans.push_back(intervals[index++]);
         }
         
-        while (index < intervals.size() && intervals[index][0] <= newInterval[1]){
+        while (index < intervals.size() && newInterval[1] >= intervals[index][0]){
             newInterval[0] = min(newInterval[0], intervals[index][0]);
             newInterval[1] = max(newInterval[1], intervals[index][1]);
             index++;
         }
-        ans.push_back(newInterval);
         
+        ans.push_back(newInterval);
         while(index < intervals.size()){
             ans.push_back(intervals[index++]);
         }
-        
         return ans;
     }
 };
