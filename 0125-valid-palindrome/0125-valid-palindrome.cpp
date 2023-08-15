@@ -6,16 +6,14 @@ public:
         while(l < r){
             if (s[l] == ' ' || !isalnum(s[l])){
                 l++;
-                continue;
             }
-            if (s[r] == ' ' || !isalnum(s[r])){
+            else if (s[r] == ' ' || !isalnum(s[r])){
                 r--;
                 continue;
             }
-            if (tolower(s[l]) == tolower(s[r])){
+            else if (tolower(s[l]) == tolower(s[r])){
                 l++;
                 r--;
-                continue;
             }
             else{
                 return false;
