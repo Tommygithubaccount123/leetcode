@@ -17,13 +17,29 @@ public:
     }
     
     void helper(TreeNode* root){
-        if (root == nullptr){return;}
+        if (!root){return;}
         
-        helper(root->left);
-        helper(root->right);
+        queue<TreeNode*> q;
+        q.push(root);
         
-        TreeNode* tmp = root->left;
-        root->left = root->right;
-        root->right = tmp;
+        while(!q.empty()){
+            int n = q.size();
+            for (int i=0; i<n; i++){
+                TreeNode* cur = q.front();
+                q.pop();
+                
+                if (cur->left){
+                    q.push(cur->left);
+                }
+                if (cur->right){
+                    q.push(cur->right);
+                }
+                TreeNode* tmp = cur->right;
+                cur->right = cur->left;
+                cur->left = tmp;
+            }
+        }
+        return;
+        
     }
 };
