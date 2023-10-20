@@ -11,16 +11,12 @@ public:
     bool hasCycle(ListNode *head) {
         ListNode* cur = head;
         if(!cur){return false;}
-        ListNode* curFast = head->next;
-        while(curFast){
-            if (curFast == cur){return true;}
-            curFast = curFast->next;
-            if (!curFast){
-                return false;
-            }else{
-                curFast = curFast->next;
-            }
+        ListNode* curFast = head;
+        
+        while(curFast && curFast->next){
+            curFast = curFast->next->next;
             cur = cur->next;
+            if (curFast == cur){return true;}
         }
         return false;
     }
