@@ -20,6 +20,7 @@ public:
         }
         
         ListNode* tail = reverse(slow);
+        ListNode* tailSave = tail;
         while (tail && head){
             if (tail->val != head->val){
                 return false;
@@ -27,6 +28,7 @@ public:
             tail = tail->next;
             head = head->next;
         }
+        reverse(tailSave);
         return true;
     }
     
