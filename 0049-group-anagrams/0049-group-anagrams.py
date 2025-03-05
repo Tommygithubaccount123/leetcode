@@ -11,8 +11,5 @@ class Solution:
         
         out = []
         for elem in storage:
-            out2 = []
-            for part in storage[elem]:
-                out2.append(part)
-            out.append(out2)
+            out.append(storage[elem])
         return out
