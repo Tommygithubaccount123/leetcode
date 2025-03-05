@@ -1,15 +1,18 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        map = dict()
-        
-        for str in strs:
-            sorted_str = ''.join(sorted(str))
-            if sorted_str in map:
-                map[sorted_str].append(str)
+        storage = dict()
+
+        for word in strs:
+            key = ''.join(sorted(word))
+            if key not in storage:
+                storage[key] = [word]
             else:
-                map[sorted_str] = [str]
+                storage[key].append(word)
         
-        output = []
-        for out in map:
-            output.append(map[out])
-        return output
+        out = []
+        for elem in storage:
+            out2 = []
+            for part in storage[elem]:
+                out2.append(part)
+            out.append(out2)
+        return out
