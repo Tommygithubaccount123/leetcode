@@ -3,7 +3,7 @@ class Solution:
         low = 1
         high = 10**9
         while (low <= high):
-            rate = int((high - low) / 2 + low)
+            rate = (high - low) // 2 + low
             time = h
             for i in range(len(piles)):
                 time -= int(math.ceil(piles[i] / rate))
