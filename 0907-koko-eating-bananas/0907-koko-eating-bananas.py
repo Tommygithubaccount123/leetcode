@@ -2,8 +2,6 @@ class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         low = 1
         high = 10**9
-
-        k=1
         while (low <= high):
             rate = int((high - low) / 2 + low)
             time = h
