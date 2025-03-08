@@ -54,14 +54,17 @@ test
 ## Tree
 |  |
 | ------- |
+| [0226-invert-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0226-invert-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
 ## Binary Tree
 |  |
 | ------- |
+| [0226-invert-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0226-invert-binary-tree) |
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
 ## Sliding Window
 |  |
@@ -75,4 +78,8 @@ test
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/Tommygithubaccount123/leetcode/tree/master/0206-reverse-linked-list) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
