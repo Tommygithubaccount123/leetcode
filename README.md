@@ -49,6 +49,7 @@ test
 ## Dynamic Programming
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/Tommygithubaccount123/leetcode/tree/master/0062-unique-paths) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Tommygithubaccount123/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
 ## Tree
@@ -114,4 +115,12 @@ test
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0098-validate-binary-search-tree) |
+## Math
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/Tommygithubaccount123/leetcode/tree/master/0062-unique-paths) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/Tommygithubaccount123/leetcode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
