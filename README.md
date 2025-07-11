@@ -11,6 +11,7 @@ test
 | [0049-group-anagrams](https://github.com/Tommygithubaccount123/leetcode/tree/master/0049-group-anagrams) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Tommygithubaccount123/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0128-longest-consecutive-sequence](https://github.com/Tommygithubaccount123/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Tommygithubaccount123/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0907-koko-eating-bananas](https://github.com/Tommygithubaccount123/leetcode/tree/master/0907-koko-eating-bananas) |
 ## Hash Table
@@ -18,6 +19,7 @@ test
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Tommygithubaccount123/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/Tommygithubaccount123/leetcode/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/Tommygithubaccount123/leetcode/tree/master/0128-longest-consecutive-sequence) |
 ## String
 |  |
 | ------- |
@@ -123,4 +125,8 @@ test
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/Tommygithubaccount123/leetcode/tree/master/0062-unique-paths) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Tommygithubaccount123/leetcode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
