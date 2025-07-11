@@ -20,6 +20,7 @@ test
 | [0003-longest-substring-without-repeating-characters](https://github.com/Tommygithubaccount123/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/Tommygithubaccount123/leetcode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/Tommygithubaccount123/leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
 ## String
 |  |
 | ------- |
@@ -94,6 +95,7 @@ test
 ## Linked List
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
 | [0206-reverse-linked-list](https://github.com/Tommygithubaccount123/leetcode/tree/master/0206-reverse-linked-list) |
 ## Recursion
 |  |
@@ -129,4 +131,12 @@ test
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Tommygithubaccount123/leetcode/tree/master/0128-longest-consecutive-sequence) |
+## Design
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
