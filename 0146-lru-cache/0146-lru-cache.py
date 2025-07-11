@@ -12,21 +12,12 @@ class LRUCache(object):
         self.capacity = capacity
         self.head = None
         self.tail = None
-        
-    def printList(self):
-        node = self.tail
-        while(node):
-            print(node.key)
-            node = node.next
-        node = self.head
 
     def get(self, key):
         if key not in self.storage:
             return -1
         node = self.storage[key]
         self.update(node)
-        print("AFTER GET " + str(key))
-        # self.printList()
         return node.val
 
     # Make node most recently used
@@ -63,8 +54,6 @@ class LRUCache(object):
             node.next = None
         else:
             self.head = node
-        # print("AFTER UPDATE " + str(node.key))
-        # self.printList()
 
     def put(self, key, value):
         node = None
@@ -80,7 +69,6 @@ class LRUCache(object):
         # if first node inserted
         if len(self.storage) == 1:
             self.tail = node
-            # self.head = node
                     
         if len(self.storage) > self.capacity:
             # delete tail
@@ -89,11 +77,8 @@ class LRUCache(object):
                 right = old_tail.next
                 right.prev = None
                 del self.storage[old_tail.key]
-                print("DELETED", old_tail.key)
                 del old_tail
                 self.tail = right
-        print("AFTER PUT " + str(key))
-        # self.printList()
         
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
