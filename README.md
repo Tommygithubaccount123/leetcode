@@ -13,6 +13,7 @@ test
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Tommygithubaccount123/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/Tommygithubaccount123/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Tommygithubaccount123/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/Tommygithubaccount123/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0907-koko-eating-bananas](https://github.com/Tommygithubaccount123/leetcode/tree/master/0907-koko-eating-bananas) |
 ## Hash Table
 |  |
@@ -44,10 +45,12 @@ test
 | [0141-linked-list-cycle](https://github.com/Tommygithubaccount123/leetcode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Tommygithubaccount123/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/Tommygithubaccount123/leetcode/tree/master/0287-find-the-duplicate-number) |
 ## Binary Search
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Tommygithubaccount123/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/Tommygithubaccount123/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0907-koko-eating-bananas](https://github.com/Tommygithubaccount123/leetcode/tree/master/0907-koko-eating-bananas) |
 ## Greedy
 |  |
@@ -145,4 +148,8 @@ test
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/Tommygithubaccount123/leetcode/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
