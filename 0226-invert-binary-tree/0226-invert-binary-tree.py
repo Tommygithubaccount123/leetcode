@@ -10,8 +10,6 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: Optional[TreeNode]
         """
-        if not root:
-            return None
         self.do(root)
         return root
     
