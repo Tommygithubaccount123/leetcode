@@ -10,12 +10,10 @@ class Solution(object):
         :type root: Optional[TreeNode]
         :rtype: int
         """
-        return self.do(root)
-    def do(self, root):
         if not root:
             return 0
-        right = self.do(root.right)
-        left = self.do(root.left)
+        right = self.maxDepth(root.right)
+        left = self.maxDepth(root.left)
         return max(right, left) + 1
         
         
