@@ -76,6 +76,7 @@ test
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -89,6 +90,7 @@ test
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
@@ -103,6 +105,7 @@ test
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Sliding Window
 |  |
 | ------- |
@@ -126,6 +129,7 @@ test
 | [0104-maximum-depth-of-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/Tommygithubaccount123/leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/0226-invert-binary-tree) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/Tommygithubaccount123/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## String Matching
 |  |
 | ------- |
