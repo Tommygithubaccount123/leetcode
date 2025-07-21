@@ -16,6 +16,7 @@ test
 | [0239-sliding-window-maximum](https://github.com/Tommygithubaccount123/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0287-find-the-duplicate-number](https://github.com/Tommygithubaccount123/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0907-koko-eating-bananas](https://github.com/Tommygithubaccount123/leetcode/tree/master/0907-koko-eating-bananas) |
+| [1127-last-stone-weight](https://github.com/Tommygithubaccount123/leetcode/tree/master/1127-last-stone-weight) |
 ## Hash Table
 |  |
 | ------- |
@@ -192,6 +193,7 @@ test
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Tommygithubaccount123/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Tommygithubaccount123/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1127-last-stone-weight](https://github.com/Tommygithubaccount123/leetcode/tree/master/1127-last-stone-weight) |
 ## Monotonic Queue
 |  |
 | ------- |
