@@ -1,29 +1,31 @@
-class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:
-        self.n = len(grid)
-        self.m = len(grid[0])
+class Solution(object):
+    def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        self.m = len(grid)
+        self.n = len(grid[0])
+        result = 0
+        self.visited = {}
         
-        count = 0
-        for i in range(self.n):
-            for j in range(self.m):
-                count += self.check(grid, i, j)
-        
-        return count
-    
-    def check(self, grid, i, j):
-        if i >= self.n or i < 0:
+        self.dirs = [(0,1), (0,-1), (1,0), (-1,0)]
+
+        for i in range(self.m):
+            for j in range(self.n):
+                result += self.dfs(i, j, grid)
+        return result
+
+    def dfs(self, x, y, grid):
+        if x < 0 or y < 0 or x >= self.m or y >= self.n:
             return 0
-        if j >= self.m or j < 0:
+        if (x,y) in self.visited:
             return 0
-        
-        
-        val = grid[i][j]
-        if val in "02":
+        if grid[x][y] == "0" or grid[x][y] == "2":
             return 0
-        grid[i][j] = "2"
-        
-        dirs = [(0,1), (0,-1), (1,0), (-1,0)]    
-        for dir in dirs:
-            self.check(grid, i+dir[0], j+dir[1])
-        
+
+        self.visited[(x,y)] = True
+        for dx,dy in self.dirs:
+            self.dfs(x+dx,y+dy, grid)
         return 1
+        
