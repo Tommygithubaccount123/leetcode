@@ -1,9 +1,10 @@
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+class Solution(object):
+    def twoSum(self, nums, target):
         storage = {}
         for i in range(len(nums)):
-            if ((target - nums[i]) in storage):
-                return {i, storage[target - nums[i]]}
-            storage[nums[i]] = i
-            
-        return {}
+            number = nums[i]
+            diff = target - number
+            if diff in storage:
+                return [i, storage[diff]]
+            storage[number] = i
+        return        
