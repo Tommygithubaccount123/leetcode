@@ -5,26 +5,15 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         sortedIntervals = sorted(intervals)
-        out = []
-        i=0
-        while (i<len(intervals)):
-            small = sortedIntervals[i][0]
-            big = sortedIntervals[i][1]
-            while(i+1 < len(intervals)):
-                next_small = sortedIntervals[i+1][0]
-                next_big = sortedIntervals[i+1][1]
-                if big >= next_small:
-                    big = max(big, next_big)
-                    small = min(small, next_small)
-                    i += 1
-                else:
-                    break
-            out.append([small, big])
+        out = [sortedIntervals[0]]
+
+        i = 1
+        while (i < len(intervals)):
+            curEndBig = out[-1][1]
+            new_interval = sortedIntervals[i]
+            if curEndBig >= new_interval[0]:
+                out[-1][1] = max(out[-1][1], new_interval[1])
+            else:
+                out.append(new_interval)
             i += 1
-
         return out
-                
-
-
-
-        
