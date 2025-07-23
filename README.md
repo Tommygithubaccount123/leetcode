@@ -21,6 +21,7 @@ test
 | [0287-find-the-duplicate-number](https://github.com/Tommygithubaccount123/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0907-koko-eating-bananas](https://github.com/Tommygithubaccount123/leetcode/tree/master/0907-koko-eating-bananas) |
 | [1127-last-stone-weight](https://github.com/Tommygithubaccount123/leetcode/tree/master/1127-last-stone-weight) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/Tommygithubaccount123/leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## Hash Table
 |  |
 | ------- |
@@ -32,6 +33,7 @@ test
 | [0142-linked-list-cycle-ii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
 | [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/Tommygithubaccount123/leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## String
 |  |
 | ------- |
@@ -69,6 +71,7 @@ test
 | ------- |
 | [0011-container-with-most-water](https://github.com/Tommygithubaccount123/leetcode/tree/master/0011-container-with-most-water) |
 | [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/Tommygithubaccount123/leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -79,6 +82,7 @@ test
 | [0152-maximum-product-subarray](https://github.com/Tommygithubaccount123/leetcode/tree/master/0152-maximum-product-subarray) |
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Tommygithubaccount123/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/Tommygithubaccount123/leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## Tree
 |  |
 | ------- |
@@ -241,4 +245,12 @@ test
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/Tommygithubaccount123/leetcode/tree/master/0053-maximum-subarray) |
+## Enumeration
+|  |
+| ------- |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/Tommygithubaccount123/leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
+## Prefix Sum
+|  |
+| ------- |
+| [3751-maximum-frequency-after-subarray-operation](https://github.com/Tommygithubaccount123/leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 <!---LeetCode Topics End-->
