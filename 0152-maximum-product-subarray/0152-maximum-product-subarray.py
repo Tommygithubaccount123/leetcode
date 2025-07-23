@@ -4,15 +4,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        res = max(nums)
-        cur_max = cur_min = 1
-
-        for n in nums:
-            temp = cur_max * n
-            cur_max = max(temp, cur_min * n, n)
-            cur_min = min(temp, cur_min * n, n)
-
-            res = max(res, cur_max)
-        
-        return res
+        big = 1
+        small = 1
+        glob_max = max(nums)
+        for i in range(len(nums)):
+            number = nums[i]
+            temp = number * big
+            big = max(temp, small*number, number)
+            small = min(temp, small*number, number)
+            glob_max = max(glob_max, big)
+        return glob_max
 
