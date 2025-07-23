@@ -13,7 +13,7 @@ class Solution(object):
             while(i+1 < len(intervals)):
                 next_small = sortedIntervals[i+1][0]
                 next_big = sortedIntervals[i+1][1]
-                if small <= next_big and big >= next_small:
+                if big >= next_small:
                     big = max(big, next_big)
                     small = min(small, next_small)
                     i += 1
