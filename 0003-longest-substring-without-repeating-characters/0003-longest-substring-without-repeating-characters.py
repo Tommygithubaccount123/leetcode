@@ -5,22 +5,17 @@ class Solution(object):
         :rtype: int
         """
         n = len(s)
-        if n == 1:
-            return 1
         ans = 0
-        i = j = 0
-        while (i<n):
-            storage = {}
-            j=i
-            while (j<n):
-                letter = s[j]
-                if letter in storage:
-                    ans = max(ans, j-i)
-                    break
+        l = r = 0
+        storage = {}
+        while (r<n):
+            letter = s[r]
+            if letter in storage:
+                del storage[s[l]]
+                l += 1
+            else:
                 storage[letter] = 1
-                j += 1
-                if j == n:
-                    ans = max(ans, j-i)
-            i += 1
+                r += 1
+                ans = max(ans, r-l)
         return ans
                 
