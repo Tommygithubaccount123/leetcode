@@ -5,22 +5,21 @@ class Solution(object):
         :rtype: str
         """
         n = len(s)
-        if n == 1:
-            return s
-        dp = [[False for j in range(n+1)] for i in range(n+1)]
-
-        start = 0
+        dp = [[False for j in range(n)] for i in range(n)]
         longest = 0
+        start = 0
         for i in range(n-1,-1,-1):
-            for j in range(1,n):
+            for j in range(n):
                 if i==j:
                     dp[i][j] = True
-                if i > j:
                     continue
-                if s[i] == s[j]:
-                    if j-i == 1 or dp[i+1][j-1]:
+                if i>j:
+                    continue
+                if s[i]==s[j]:
+                    if dp[i+1][j-1] or (j-i == 1):
                         dp[i][j] = True
                         if j-i > longest:
                             longest = j-i
                             start = i
         return s[start:start+longest+1]
+        
