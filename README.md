@@ -29,6 +29,7 @@ test
 | [0141-linked-list-cycle](https://github.com/Tommygithubaccount123/leetcode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
+| [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
 ## String
 |  |
 | ------- |
@@ -36,11 +37,13 @@ test
 | [0005-longest-palindromic-substring](https://github.com/Tommygithubaccount123/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0049-group-anagrams](https://github.com/Tommygithubaccount123/leetcode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/Tommygithubaccount123/leetcode/tree/master/0125-valid-palindrome) |
+| [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
 ## Sorting
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Tommygithubaccount123/leetcode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/Tommygithubaccount123/leetcode/tree/master/0049-group-anagrams) |
+| [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
 ## Two Pointers
 |  |
 | ------- |
@@ -63,6 +66,7 @@ test
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/Tommygithubaccount123/leetcode/tree/master/0011-container-with-most-water) |
+| [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -201,6 +205,7 @@ test
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Tommygithubaccount123/leetcode/tree/master/0239-sliding-window-maximum) |
+| [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Tommygithubaccount123/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/Tommygithubaccount123/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [1127-last-stone-weight](https://github.com/Tommygithubaccount123/leetcode/tree/master/1127-last-stone-weight) |
@@ -224,4 +229,8 @@ test
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/Tommygithubaccount123/leetcode/tree/master/0200-number-of-islands) |
+## Counting
+|  |
+| ------- |
+| [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
 <!---LeetCode Topics End-->
