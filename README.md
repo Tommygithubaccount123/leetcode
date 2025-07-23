@@ -10,6 +10,7 @@ test
 | [0011-container-with-most-water](https://github.com/Tommygithubaccount123/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Tommygithubaccount123/leetcode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/Tommygithubaccount123/leetcode/tree/master/0049-group-anagrams) |
+| [0053-maximum-subarray](https://github.com/Tommygithubaccount123/leetcode/tree/master/0053-maximum-subarray) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Tommygithubaccount123/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/Tommygithubaccount123/leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -71,6 +72,7 @@ test
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Tommygithubaccount123/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0053-maximum-subarray](https://github.com/Tommygithubaccount123/leetcode/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/Tommygithubaccount123/leetcode/tree/master/0062-unique-paths) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Tommygithubaccount123/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0337-house-robber-iii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0337-house-robber-iii) |
@@ -233,4 +235,8 @@ test
 |  |
 | ------- |
 | [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/Tommygithubaccount123/leetcode/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
