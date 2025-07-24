@@ -17,8 +17,8 @@ class Solution(object):
                     counter += 1
                 elif num == k:
                     counter -= 1
+                counter = max(counter, 0)
                 cur_max = max(cur_max, counter)
-                counter = max(counter , 0)
             glob_max = max(glob_max, cur_max)
         return glob_max + ks
 
