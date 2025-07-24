@@ -5,10 +5,30 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        storage = defaultdict(int)
-        result = 0
-
+        storage = {}
         for num in nums:
-            storage[num] = max(storage[num], storage[k]) + 1
-            result = max(result, storage[num] - storage[k]) # num of non-k's able to convert
-        return storage[k] + result  #maximum number of additional values we can convert to k via one subarray operation
+            if num not in storage:
+               storage[num] = 1
+            else:
+                storage[num] += 1
+        ks = 0
+        if k in storage:
+            ks = storage[k]
+
+        glob_max = 0
+        for i in range(1,51):
+            if i == k:
+                continue
+            cur_max = counter = 0
+            for num in nums:
+                if i == num:
+                    counter += 1
+                elif num == k:
+                    counter -= 1
+                cur_max = max(cur_max, counter)
+                counter = max(counter , 0)
+            glob_max = max(glob_max, cur_max)
+        return glob_max + ks
+
+
+            
