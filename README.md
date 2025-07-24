@@ -41,6 +41,7 @@ test
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Tommygithubaccount123/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/Tommygithubaccount123/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0020-valid-parentheses](https://github.com/Tommygithubaccount123/leetcode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/Tommygithubaccount123/leetcode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/Tommygithubaccount123/leetcode/tree/master/0125-valid-palindrome) |
 | [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
@@ -261,6 +262,7 @@ test
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Tommygithubaccount123/leetcode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Tommygithubaccount123/leetcode/tree/master/0042-trapping-rain-water) |
 ## Monotonic Stack
 |  |
