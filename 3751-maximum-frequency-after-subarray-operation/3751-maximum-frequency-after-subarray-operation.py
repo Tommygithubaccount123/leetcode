@@ -5,15 +5,7 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        storage = {}
-        for num in nums:
-            if num not in storage:
-               storage[num] = 1
-            else:
-                storage[num] += 1
-        ks = 0
-        if k in storage:
-            ks = storage[k]
+        ks = nums.count(k)
 
         glob_max = 0
         for i in range(1,51):
