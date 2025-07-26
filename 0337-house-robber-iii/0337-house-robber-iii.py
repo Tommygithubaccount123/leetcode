@@ -5,21 +5,27 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def rob(self, root: Optional[TreeNode], storage=dict()) -> int:
-        if (root is None):
+    def __init__(self):
+        self.storage = {}
+    def rob(self, root: Optional[TreeNode]) -> int:
+        if not root:
             return 0
-        if (root in storage):
-            return storage[root]
+        if root in self.storage:
+            return self.storage[root]
+        
+        case1 = 0
+        if root.left:
+            case1 += self.rob(root.left)
+        if root.right:
+            case1 += self.rob(root.right)
 
-        children = self.rob(root.right) + self.rob(root.left)
-        grand = 0
-        if (root.right is not None):
-            grand += self.rob(root.right.right) + self.rob(root.right.left)
-        if (root.left is not None):
-            grand += self.rob(root.left.right) + self.rob(root.left.left)
-        value = max(children, root.val + grand)
-        storage[root] = value
+        case2 = root.val
+        if root.left:
+            case2 += self.rob(root.left.left) + self.rob(root.left.right)
+        if root.right:
+            case2 += self.rob(root.right.left) + self.rob(root.right.right)
+
+        value = max(case1, case2)
+        self.storage[root] = value
         return value
-
-
         
