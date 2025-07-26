@@ -1,25 +1,32 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
-        n = len(nums)
-
         out = []
-        for i in range(n):
-            if (i>0 and nums[i]==nums[i-1]):
+        for i in range(len(nums)):
+            if i >= 1 and nums[i] == nums[i-1]:
                 continue
-            target = nums[i]
-            l=i+1
-            r=n-1
-            while(l<r):
-                add = nums[l]+nums[r]
-                if (add+target==0):
-                    out.append([nums[l],nums[r],target])
-                    l += 1
-                    while(l<r and nums[l]==nums[l-1]):
-                        l += 1
-                elif (add+target > 0):
-                    r -= 1
-                else:
-                    l += 1
+            triples = self.twoSum(nums, -nums[i], i, nums[i])
+            if triples:
+                out.extend(triples)
         return out
 
+    def twoSum(self, nums, target, i, fixed):
+        l = i+1
+        r = len(nums) - 1
+        out = []
+        while (l < r):
+            total = nums[l] + nums[r]
+
+            if total < target:
+                l += 1
+            elif total > target:
+                r -= 1
+            else:
+                out.append([nums[l], nums[r], fixed])
+                l += 1
+                r -= 1
+                while l<r and nums[l] == nums[l-1]:
+                    l += 1
+                while r>l and nums[r] == nums[r+1]:
+                    r -= 1
+        return out
