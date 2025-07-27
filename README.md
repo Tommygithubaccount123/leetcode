@@ -38,6 +38,7 @@ test
 | [0142-linked-list-cycle-ii](https://github.com/Tommygithubaccount123/leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
 | [0347-top-k-frequent-elements](https://github.com/Tommygithubaccount123/leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0424-longest-repeating-character-replacement](https://github.com/Tommygithubaccount123/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0567-permutation-in-string) |
 | [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
 | [3751-maximum-frequency-after-subarray-operation](https://github.com/Tommygithubaccount123/leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
@@ -49,6 +50,7 @@ test
 | [0020-valid-parentheses](https://github.com/Tommygithubaccount123/leetcode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/Tommygithubaccount123/leetcode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/Tommygithubaccount123/leetcode/tree/master/0125-valid-palindrome) |
+| [0424-longest-repeating-character-replacement](https://github.com/Tommygithubaccount123/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0567-permutation-in-string) |
 | [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
 ## Sorting
@@ -158,6 +160,7 @@ test
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Tommygithubaccount123/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0239-sliding-window-maximum](https://github.com/Tommygithubaccount123/leetcode/tree/master/0239-sliding-window-maximum) |
+| [0424-longest-repeating-character-replacement](https://github.com/Tommygithubaccount123/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0567-permutation-in-string) |
 ## Linked List
 |  |
