@@ -1,72 +1,52 @@
 class Node():
-    def __init__(self, val, left, right, key):
+    def __init__(self, key, val, left=None, right=None):
+        self.key = key
         self.val = val
         self.left = left
         self.right = right
-        self.key = key
 
-class LRUCache(object):
-
-    def __init__(self, capacity):
-        """
-        :type capacity: int
-        """
+class LRUCache:
+    def __init__(self, capacity: int):
         self.capacity = capacity
-        self.cur_capacity = 0
-        self.storage = {}
-
-        self.tail = Node(None, None, None, None)
-        self.head = Node(None, None, None, None)
-        self.tail.right = self.head
+        self.storage = dict()
+        self.head = Node(None, None)
+        self.tail = Node(None, None)
         self.head.left = self.tail
+        self.tail.right = self.head
 
-    def insert(self, node):
-        left = self.head.left
-        right = self.head
-        left.right = node
-        right.left = node
-        node.left = left
-        node.right = right
-        self.cur_capacity += 1
-        self.storage[node.key] = node
-    
+    def get(self, key: int) -> int:
+        if key in self.storage:
+            node = self.storage[key]
+            self.remove(node)
+            self.insert(node)
+            return self.storage[key].val
+        return -1
+
+    def put(self, key: int, value: int) -> None:
+        if key in self.storage:
+            node = self.storage[key]
+            self.remove(node)
+        update_node = Node(key, value)
+        self.insert(update_node)
+
     def remove(self, node):
         left = node.left
         right = node.right
-        right.left = left
         left.right = right
-        self.cur_capacity -= 1
+        right.left = left
         del self.storage[node.key]
+    
+    def insert(self, node):
+        if len(self.storage) == self.capacity:
+            self.remove(self.tail.right)
 
-    def get(self, key):
-        """
-        :type key: int
-        :rtype: int
-        """
-        if key not in self.storage:
-            return -1
-        node = self.storage[key]
-        self.remove(node)
-        self.insert(node)
-        return node.val
-        
-    def put(self, key, value):
-        """
-        :type key: int
-        :type value: int
-        :rtype: None
-        """
-        new_node = Node(value, None, None, key)
-        if key not in self.storage:
-            self.insert(new_node)
-            if self.cur_capacity > self.capacity:
-                self.remove(self.tail.right)
-            return
-        node = self.storage[key]
-        self.remove(node)
-        self.insert(new_node)
-        self.storage[key] = new_node
-        
+        left = self.head.left
+        right = self.head
+        node.left = left
+        node.right = right
+        self.head.left = node
+        left.right = node
+        self.storage[node.key] = node
 
 
 # Your LRUCache object will be instantiated and called as such:
