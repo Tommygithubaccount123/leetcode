@@ -14,19 +14,16 @@ class TimeMap:
         l = 0
         r = len(times) - 1
         mid = 0
+        best_guess = ""
         while (l<=r):
             mid = (r-l)//2 + l
             guess = times[mid]
-            if guess[1] < timestamp:
+            if guess[1] <= timestamp:
                 l = mid + 1
+                best_guess = guess[0]
             elif guess[1] > timestamp:
                 r = mid - 1
-            else:
-                return guess[0]
-        best_guess = times[r]
-        if best_guess[1] <= timestamp:
-            return best_guess[0]
-        return ""
+        return best_guess
 
 
         
