@@ -41,6 +41,7 @@ test
 | [0424-longest-repeating-character-replacement](https://github.com/Tommygithubaccount123/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0567-permutation-in-string) |
 | [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
+| [1023-time-based-key-value-store](https://github.com/Tommygithubaccount123/leetcode/tree/master/1023-time-based-key-value-store) |
 | [3751-maximum-frequency-after-subarray-operation](https://github.com/Tommygithubaccount123/leetcode/tree/master/3751-maximum-frequency-after-subarray-operation) |
 ## String
 |  |
@@ -53,6 +54,7 @@ test
 | [0424-longest-repeating-character-replacement](https://github.com/Tommygithubaccount123/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0567-permutation-in-string) |
 | [0778-reorganize-string](https://github.com/Tommygithubaccount123/leetcode/tree/master/0778-reorganize-string) |
+| [1023-time-based-key-value-store](https://github.com/Tommygithubaccount123/leetcode/tree/master/1023-time-based-key-value-store) |
 ## Sorting
 |  |
 | ------- |
@@ -81,6 +83,7 @@ test
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Tommygithubaccount123/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0287-find-the-duplicate-number](https://github.com/Tommygithubaccount123/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0907-koko-eating-bananas](https://github.com/Tommygithubaccount123/leetcode/tree/master/0907-koko-eating-bananas) |
+| [1023-time-based-key-value-store](https://github.com/Tommygithubaccount123/leetcode/tree/master/1023-time-based-key-value-store) |
 ## Greedy
 |  |
 | ------- |
@@ -222,6 +225,7 @@ test
 | ------- |
 | [0146-lru-cache](https://github.com/Tommygithubaccount123/leetcode/tree/master/0146-lru-cache) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/Tommygithubaccount123/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1023-time-based-key-value-store](https://github.com/Tommygithubaccount123/leetcode/tree/master/1023-time-based-key-value-store) |
 ## Doubly-Linked List
 |  |
 | ------- |
